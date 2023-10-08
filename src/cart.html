@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="/dist/output.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="w-full mx-auto sticky top-0 z-50">
+        <nav id="navbar" class="flex flex-start justify-between md:px-16 py-4 md:py-8 bg-transparent">
+            <div class="pl-4 md:pl-0">
+                <h1 class="uppercase font-normal text-3xl text-black font-playfair">aksara</h1>
+            </div>
+            <div id="nav-menu" class="md:static absolute w-full md:w-auto hidden md:flex items-center ">
+                <div class="relative w-full">
+                    <ul id="menu" class="flex md:min-h-fit font-inter font-bold bg-gradient-to-r md:backdrop-blur-none backdrop-blur-xl bg-black/[0.6] md:bg-transparent py-8 md:py-0 md:text-black text-white md:flex-row flex-col gap-3 md:gap-10 mt-[52px] md:mt-0 w-full text-center">
+                        <li class="nav-item flex justify-center active text-white  ">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5  ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                              </svg>
+                            <a class="text-base lg:translate-x-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item  flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                              </svg>
+                            <a class=" text-base " href="shop.html">Equipment</a>
+                        </li>
+                        <li class="nav-item flex justify-center ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                              </svg>
+                              
+                            <a class="text-base" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                              </svg>
+                              
+                            <a class="text-base " href="#">How to Rent</a>
+                        </li>
+                        <li class="flex justify-center dropdown-container" data-dropdown-id="dropdown1">
+                            <a href="javascript:void(0);" class="relative h-8 w-8 ">
+                                <div>
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                      </svg>
+                                      
+                                   
+                                </div>
+                                <div class="absolute right-0 top-[-9px] text-center">
+                                    <div class="w-4 h-4 bg-red-700 rounded-full text-[12px]">1</div>
+                                </div>
+                            </a>
+                            <div class="menu dropdown-menu hidden absolute sm:w-96 mt-16 w-[90%] lg:w-[60%]  sm:right-0 xs:right-0  bg-white  rounded-md drop-shadow-md font-inter" >
+                                <ul >
+                                    <li class=" text-base text-dark relative hover:bg-slate-200 pl-2 border-b-2 py-3 px-2">
+                                        <a href="#" class="flex">
+                                            <div class="my-auto">
+                                                <div class="overflow-hidden rounded-full">
+                                                    <div name="img-profile" class="group ">
+                                                        <img src="/src/img/produk.png" alt="img" class="img-profile object-center object-cover  h-8 w-8">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="flex flex-col ml-4 text-left">
+                                                <h6 class="font-light text-sm text-fonthitam">Canon EOS 90 D</h6>  
+                                                <p  class="font-light text-xs leading-6 text-fonthitam">1 x Rp.1400000</p>
+                                                <h6 class="font-semibold text-base text-fonthitam">Rp.14000000</h6>  
+
+                                             </div>
+                                        </a>
+                                        <a href="#" class="absolute right-4 top-[40%] group text-fonthitam">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:text-red-700">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                              </svg>
+                                              
+                                        </a>
+                                    </li>
+                                    
+                                   
+                                </ul>
+                                <div class="grid grid-cols-2 place-content-between mt-2 px-2 ">
+                                    <div class="di">
+                                        <h5 class="text-left ml-2 text-fonthitam">Total</h5>
+
+                                    </div>
+                                    <div class="di">
+                                        <h5 class="text-right mr-3 text-fonthitam">Rp.2000000</h5>
+
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 mt-4  mb-4">
+                                    <div class="div">
+                                        <a href="cart.html" class="text-white border-2  bg-hitam px-8 p-2 w-fit lg:w-fit hover:bg-white duration-300 border-white hover:border-hitam hover:text-hitam  text-xs font-light uppercase">View Cart</a>    
+                                    </div>
+                                    <div class="di">
+                                        <a href="checkout.html" class="text-hitam border-2  bg-white px-8 p-2 w-fit lg:w-fit hover:bg-hitam duration-300 border-hitam hover:border-white  hover:text-white text-xs font-light uppercase">Checkout</a>  
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <span id="glider" class="hidden lg:flex glider left-[-7px] -top-3 absolute w-24 h-12  rounded-full bg-hitam -z-10"></span>
+
+                    </ul>
+                </div>
+             
+            </div>
+            <div class=" md:hidden pr-4 z-10">
+                <a href="#" id="humberger" class="font-bold xl:hidden pt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler  icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 6l16 0"></path>
+                        <path d="M4 12l16 0"></path>
+                        <path d="M4 18l16 0"></path>
+                     </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="px-16 bg-hitam">
+            <div class="py-6">
+                <h1 class="text-sky-50 font-bold text-3xl font-inter">Cart</h1>
+                <a href="#" class="text-white text-xs mt-3 font-inter"><span class="font-bold">Home </span><span class="opacity-60">/ Cart</span></a>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex px-4 md:px-16 flex-col md:flex-row mt-10 mb-28">
+            <div class=" overflow-x-auto scrollbar-none">
+                <table class="divide-y-[1px] divide-black ">
+                    <thead class="">
+                        <th class="px-6 py-3 bg-blueDark text-left  
+                        font-medium text-black uppercase tracking-wider">Product</th>
+                        <th class="px-6 py-3 bg-blueDark text-left  
+                        font-medium text-black uppercase tracking-wider">Price</th>
+                        <th class="px-6 py-3 bg-blueDark text-left  
+                        font-medium text-black uppercase tracking-wider">Quantity</th>
+                        <th class="px-6 py-3 bg-blueDark text-left  
+                        font-medium text-black uppercase tracking-wider">Total</th>
+                    </thead>
+                    <tbody class="bg-blueDark divide-y-[0.5px] divide-gray-500">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-no-wrap  text-black w-60">
+                                <div class="flex flex-row">
+                                    <img src="/src/img/produk.png" class="object-cover mr-4" height="50px" width="50px" alt="">
+                                    <div class="flex flex-col">
+                                        <h5 class="font-normal font-inter text-md text-fonthitam">Canon EOS 90D</h5>
+                                        <p class="font-light text-gray-600 font-inter text-sm">Camera</p>
+                                    </div>
+    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap  text-black w-48">
+                                <h5><span class="font-normal font-inter text-md text-fonthitam">Rp 243.000</span>/hari</h5>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap  text-black w-48">
+                                <h5><span class="font-normal font-inter text-md text-fonthitam">2</span>/hari</h5>
+    
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap w-48">
+                                <h5 class="font-normal font-inter text-md text-fonthitam">Rp 243.000</h5>            
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap">
+                                <a href="#" class="hover:text-gray-500 text-red-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                      </svg>
+                                </a>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="md:ml-5 md:w-80 mt-5">
+                <div class="bg-abu p-10">
+                    <h3 class="font-bold text-2xl border-b-2 mb-8 pb-3 text-fonthitam">Order Summary</h3>
+                    <div class="grid grid-cols-2">
+                        <h5 class="font-normal">Sub Total</h5>
+                        <h5 class="font-normal">Rp 243.000</h5>
+                    </div>
+                    <div class="grid grid-cols-2 mt-2">
+                        <h5 class="font-normal">Shipping</h5>
+                        <h5 class="font-normal" >Free</h5>
+                    </div>
+                </div>
+                <div class="bg-abu2 px-10 py-4">
+                    <div class="grid grid-cols-2">
+                        <h5 class="font-bold text-xl text-fonthitam">Total</h5>
+                        <h5 class="font-bold text-xl text-fonthitam">Rp243.000</h5>
+                    </div>
+                </div>
+                <a href="checkout.html">
+                    <button  class="text-white border-2 bg-hitam p-5 mt-3 w-full hover:bg-transparent hover:border-3 duration-200 hover:border-hitam hover:text-fonthitam">Checkout</button>
+
+                </a>
+            </div>
+      </section>
+      <section>
+        <footer class="xl:px-72 py-16 bg-hitam	">
+            <div class="">
+                <div class="flex flex-col text-center items-center">
+                    <h1 class="font-bold font-playfair text-white/95 text-center text-3xl mb-4 uppercase">Aksara</h1>
+                    <div class="flex flex-col items-center mt-4 md:flex-row">
+                        <div class="flex hover:text-white/50 text-white/95 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-sm md:text-lg mr-2  icon icon-tabler icon-tabler-brand-instagram justify-self-end " width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M16.5 7.5l0 .01"></path>
+                             </svg>
+                             <a href="#" class="  justify-start text-xs md:text-md font-inter uppercase">aksara</a>
+                        </div>
+                        <div class="flex md:ml-3 hover:text-white/50 text-white/95 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-sm md:text-lg mr-2  icon icon-tabler icon-tabler-brand-gmail justify-self-end" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z"></path>
+                                <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z"></path>
+                                <path d="M16 4l-4 4l-4 -4"></path>
+                                <path d="M4 6.5l8 7.5l8 -7.5"></path>
+                             </svg>
+                             <a href="#" class=" hover:text-white/50 justify-start text-sm md:text-md font-inter">aksara@gmail.com</a>
+                        </div>
+                        <div class="flex md:ml-3 hover:text-white/50 text-white/95 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-sm md:text-lg mr-2  icon icon-tabler icon-tabler-phone justify-self-end" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                             </svg>
+                             <a href="#" class=" hover:text-white/50 justify-start text-sm md:text-md font-inter">+62 86724172790</a>
+                        </div>
+                       
+                    </div>
+                    <p class="text-white/95 font-inter mt-5 md:text-md text-sm">
+                        Jl. Lorem ipsum D13, Sawahan, Bantul, indonesia -55346
+                    </p>
+                    <p class="text-white/95 font-inter mt-5 text-xs font-bold">
+                        Copyright © 2023 Aksara. All Right Reserved
+                    </p>
+                </div>
+            </div>
+            
+        </footer>
+      </section>
+      <script src="/dist/navbar2.js"></script> 
+</body>
+</html>
